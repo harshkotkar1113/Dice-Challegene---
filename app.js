@@ -3,6 +3,7 @@ console.log('Hellow, harsh code here!')
 let randomNumber = Math.floor(Math.random()*6 + 1);
 console.log(randomNumber);
 let randomDice = "dice" + randomNumber + ".png";
+console.log(randomDice)
 let randomImageSource = "image/" + randomDice ;
 let randomSkim = document.getElementsByClassName('image')[0];
 console.log(randomSkim)
@@ -19,13 +20,18 @@ console.log(randomSkim2)
 randomSkim2.setAttribute("src" , randomImageSource2)
 
 if(randomNumber > randomNumber2){
-    var answer= document.querySelector('.answer');
+    var answer= document.getElementsByClassName('answer')[0];
     console.log(answer)
-    answer.innerHTML = "Congrts player 1 WIN"
+    answer.innerHTML = "Player 1 WIN"
 }else if(randomNumber < randomNumber2){
     var answer= document.querySelector('.answer');
-    answer.innerHTML = "Congrts player 2 WIN";
+    answer.innerHTML = "Player 2 WIN";
 }else{
     var answer= document.querySelector('.answer');
     answer.innerHTML  = "!!!Draw!!!";
 }
+
+let playGame = document.getElementById('btn').addEventListener
+('click', function(){
+    location.reload();
+})
