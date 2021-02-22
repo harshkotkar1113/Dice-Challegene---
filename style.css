@@ -4,11 +4,12 @@ body{
 .heading{
     font-family: 'Reggae One', cursive;
     font-size: 300%;
+    margin: auto;
 }
 .player{
     padding-left: 35%;
 }
 
-.btn{
+/* .btn{
     margin-left: 45%;
-}
+} */
