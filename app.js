@@ -19,6 +19,9 @@ let randomSkim2 = document.getElementsByClassName('image')[1];
 console.log(randomSkim2)
 randomSkim2.setAttribute("src" , randomImageSource2)
 
+
+// Winner result
+
 if(randomNumber > randomNumber2){
     var answer= document.getElementsByClassName('answer')[0];
     console.log(answer)
@@ -30,6 +33,8 @@ if(randomNumber > randomNumber2){
     var answer= document.querySelector('.answer');
     answer.innerHTML  = "!!!Draw!!!";
 }
+
+// playgame button
 
 let playGame = document.getElementById('btn').addEventListener
 ('click', function(){
